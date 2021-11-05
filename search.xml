@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>test</title>
+      <link href="/2021/11/04/test/"/>
+      <url>/2021/11/04/test/</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;hello world&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C++的引用是什么?</title>
+      <link href="/2021/11/03/quote/"/>
+      <url>/2021/11/03/quote/</url>
+      
+        <content type="html"><![CDATA[<h1 id="普通变量的引用类型"><a href="#普通变量的引用类型" class="headerlink" title="普通变量的引用类型"></a>普通变量的引用类型</h1><h2 id="main函数中，int赋值给int"><a href="#main函数中，int赋值给int" class="headerlink" title="main函数中，int赋值给int"></a>main函数中，int赋值给int</h2><p>int a = 1;</p><p>int b = a;</p><p><img src="/2021/11/03/quote/1.png" alt="1.png">hexp </p><p>-0x8(%rbp)存放a的值，-0x4(%rbp)存放b的值。</p><p>注：只有ab变量时，没有sub rsp的操作，a,b在栈顶之外，加上c[20]数组后才有sub rsp的操作。</p><h2 id="main函数中，int赋值给int-amp"><a href="#main函数中，int赋值给int-amp" class="headerlink" title="main函数中，int赋值给int&amp;"></a>main函数中，int赋值给int&amp;</h2><p>int a = 1；</p><p>int&amp; b = a;</p><p><img src="/2021/11/03/quote/2.png" alt="2"></p><p>-0x14(%rbp)存放变量a的值，-0x10(%rbp)存放b的值，为变量a的地址。</p><h2 id="其它函数中-形参为引用类型"><a href="#其它函数中-形参为引用类型" class="headerlink" title="其它函数中,形参为引用类型"></a>其它函数中,形参为引用类型</h2><p>void f(int&amp;)</p><p><img src="/2021/11/03/quote/3.png" alt="3"></p><p>-0x14(%rbp)存放变量a的值，-0x10(%rbp)存放变量b的值，为变量a的地址。变量a的地址存放到rdi，作为参数传给函数f。</p><p><img src="/2021/11/03/quote/4.png" alt="4"></p><p>-0x8(%rbp)存放变量c的值，为变量a的地址。故而，函数f()获得了main函数中变量的指针。我们再来看一下void f(int*)的反汇编代码：</p><p><img src="/2021/11/03/quote/5.png" alt="5"></p><p><img src="/2021/11/03/quote/6.png" alt="6"></p><p>和传指针的汇编代码，步骤是一样的。</p><h2 id="其它函数中-返回类型为引用类型"><a href="#其它函数中-返回类型为引用类型" class="headerlink" title="其它函数中,返回类型为引用类型"></a>其它函数中,返回类型为引用类型</h2><p>int&amp; f(int)</p><h1 id="类的引用类型"><a href="#类的引用类型" class="headerlink" title="类的引用类型"></a>类的引用类型</h1><h2 id="main函数中，创建类A的实例"><a href="#main函数中，创建类A的实例" class="headerlink" title="main函数中，创建类A的实例"></a>main函数中，创建类A的实例</h2><p><img src="/2021/11/03/quote/7.png" alt="7"></p><p>进入main后，再进入A的构造函数A()，在A中初始化类A的成员变量</p><h2 id="main函数中，A赋值给A-amp"><a href="#main函数中，A赋值给A-amp" class="headerlink" title="main函数中，A赋值给A&amp;"></a>main函数中，A赋值给A&amp;</h2><p>A a;</p><p>A&amp; b = a; </p><h2 id="成员函数中，形参为引用类型"><a href="#成员函数中，形参为引用类型" class="headerlink" title="成员函数中，形参为引用类型"></a>成员函数中，形参为引用类型</h2><p>void A::A(A&amp;)</p><h2 id="成员函数中，返回类型为引用类型"><a href="#成员函数中，返回类型为引用类型" class="headerlink" title="成员函数中，返回类型为引用类型"></a>成员函数中，返回类型为引用类型</h2><p>A&amp; A::f()</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>通用测量单位</title>
+      <link href="/2021/11/03/%E9%80%9A%E7%94%A8%E6%B5%8B%E9%87%8F%E5%8D%95%E4%BD%8D/"/>
+      <url>/2021/11/03/%E9%80%9A%E7%94%A8%E6%B5%8B%E9%87%8F%E5%8D%95%E4%BD%8D/</url>
+      
+        <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>力的基本单位是什么呢？力又是如何测量的呢？</p><p>时间的基本单位秒是怎么来的呢？</p><p>长度的基本单位米是怎么来的呢？</p><div class="hide-toggle"><div class="hide-button toggle-title" style><i class="fas fa-caret-right fa-fw"></i><span>Butterfly安裝方法</span></div>    <div class="hide-content"><p>在你的博客根目錄裏</p><p>git clone -b master <a href="https://github.com/jerryc127/hexo-theme-butterfly.git">https://github.com/jerryc127/hexo-theme-butterfly.git</a> themes/Butterfly</p><p>如果想要安裝比較新的dev分支，可以</p><p>git clone -b dev <a href="https://github.com/jerryc127/hexo-theme-butterfly.git">https://github.com/jerryc127/hexo-theme-butterfly.git</a> themes/Butterfly</p></div></div>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2021/11/03/hello-world/"/>
+      <url>/2021/11/03/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
