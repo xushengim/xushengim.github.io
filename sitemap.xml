@@ -4,7 +4,7 @@
   <url>
     <loc>https://xushengim.github.io/2021/11/14/%E4%BD%95%E4%B8%BA%E6%A6%82%E7%8E%87/</loc>
     
-    <lastmod>2021-11-14</lastmod>
+    <lastmod>2021-11-15</lastmod>
     
   </url>
   
@@ -144,7 +144,7 @@
 
   <url>
     <loc>https://xushengim.github.io/</loc>
-    <lastmod>2021-11-14</lastmod>
+    <lastmod>2021-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -153,50 +153,50 @@
 
   
   <url>
-    <loc>https://xushengim.github.io/categories/%E6%95%B0/</loc>
-    <lastmod>2021-11-14</lastmod>
+    <loc>https://xushengim.github.io/categories/%E7%94%B5/</loc>
+    <lastmod>2021-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://xushengim.github.io/categories/blog-in-hexo-github/</loc>
-    <lastmod>2021-11-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xushengim.github.io/categories/%E7%94%B5/</loc>
-    <lastmod>2021-11-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xushengim.github.io/categories/C/</loc>
-    <lastmod>2021-11-14</lastmod>
+    <lastmod>2021-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://xushengim.github.io/categories/%E5%8A%9B/</loc>
-    <lastmod>2021-11-14</lastmod>
+    <lastmod>2021-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xushengim.github.io/categories/%E6%95%B0/</loc>
+    <lastmod>2021-11-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xushengim.github.io/categories/C/</loc>
+    <lastmod>2021-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://xushengim.github.io/categories/%E5%85%89/</loc>
-    <lastmod>2021-11-14</lastmod>
+    <lastmod>2021-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://xushengim.github.io/categories/%E5%9F%BA%E7%9F%B3/</loc>
-    <lastmod>2021-11-14</lastmod>
+    <lastmod>2021-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
