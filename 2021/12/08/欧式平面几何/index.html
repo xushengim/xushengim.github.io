@@ -1,0 +1,405 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>欧式平面几何 | MyMind</title><meta name="keywords" content="博客"><meta name="author" content="XuSheng"><meta name="copyright" content="XuSheng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="参考： Youtube-&gt;万门好课——《五分钟数学漫谈》。 Youtube-&gt;[高等微積分] 第1講、數學的本質 - YouTube 知乎——胖三sir的专栏《初中数学那些事》 CSDN——(44条消息) 希尔伯特及其《几何学基础》电子版（英文PDF），_袁萌专栏-CSDN博客 数学的开始相传，古希腊数学家泰勒斯引入了划时代的几何证明思想。数学家们开始不再满足于知其然了，而致力于知其所">
+<meta property="og:type" content="article">
+<meta property="og:title" content="欧式平面几何">
+<meta property="og:url" content="https://xushengim.github.io/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/index.html">
+<meta property="og:site_name" content="MyMind">
+<meta property="og:description" content="参考： Youtube-&gt;万门好课——《五分钟数学漫谈》。 Youtube-&gt;[高等微積分] 第1講、數學的本質 - YouTube 知乎——胖三sir的专栏《初中数学那些事》 CSDN——(44条消息) 希尔伯特及其《几何学基础》电子版（英文PDF），_袁萌专栏-CSDN博客 数学的开始相传，古希腊数学家泰勒斯引入了划时代的几何证明思想。数学家们开始不再满足于知其然了，而致力于知其所">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://xushengim.github.io/img/math.png">
+<meta property="article:published_time" content="2021-12-08T02:06:46.000Z">
+<meta property="article:modified_time" content="2021-12-19T11:55:44.393Z">
+<meta property="article:author" content="XuSheng">
+<meta property="article:tag" content="博客">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://xushengim.github.io/img/math.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://xushengim.github.io/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="code-kGUPdLRv7f"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '欧式平面几何',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: true,
+  isToc: true,
+  postUpdate: '2021-12-19 19:55:44'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/touxiang.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/math.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">MyMind</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">欧式平面几何</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-12-08T02:06:46.000Z" title="发表于 2021-12-08 10:06:46">2021-12-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-12-19T11:55:44.393Z" title="更新于 2021-12-19 19:55:44">2021-12-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%B0/">数</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">7.9k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>31分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="欧式平面几何"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>参考：</p>
+<p>Youtube-&gt;万门好课——《五分钟数学漫谈》。</p>
+<p>Youtube-&gt;<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.youtube.com/watch?v=yYEMYP8u0sc">[高等微積分] 第1講、數學的本質 - YouTube</a></p>
+<p>知乎——胖三sir的专栏《初中数学那些事》</p>
+<p>CSDN——<a target="_blank" rel="noopener external nofollow noreferrer" href="https://blog.csdn.net/yuanmeng001/article/details/88586679?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=几何基础英文&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-88586679.pc_search_es_clickV2&amp;spm=1018.2226.3001.4187">(44条消息) 希尔伯特及其《几何学基础》电子版（英文PDF），_袁萌专栏-CSDN博客</a></p>
+<h1 id="数学的开始"><a href="#数学的开始" class="headerlink" title="数学的开始"></a>数学的开始</h1><p>相传，古希腊数学家泰勒斯引入了划时代的几何证明思想。数学家们开始不再满足于知其然了，而致力于知其所以然。通过公理或已证明命题(定理)推理出新的定理，在各定理之间建立起了联系，使数学逐步形成了一个严密的体系。</p>
+<h1 id="物理和数学"><a href="#物理和数学" class="headerlink" title="物理和数学"></a>物理和数学</h1><p>物理的研究对象是真实世界中的东西或者说对象，研究其属性或行为。如一只猫的叫声，捕食；形状，颜色，长度，速度，重量等等。研究手段是简单化和理想化(如一个苹果，变成纸上的一个点)的真实对象——逻辑对象。逻辑对象有人为规定的一些属性。人的一切知识都是由已知的经验产生的。</p>
+<p>数学研究逻辑世界中的东西，是物理学的研究手段，如符号，公理，推导规则，推论形成公理体系。逻辑世界是简单化和理想化后的真实世界。</p>
+<h1 id="几何一词的由来，目的和发展"><a href="#几何一词的由来，目的和发展" class="headerlink" title="几何一词的由来，目的和发展"></a>几何一词的由来，目的和发展</h1><p>英文Geometry一词,是从希腊语演变而来的,其原意是土地测量、后被我国明朝大学士徐光启翻译成”几何学”。依据大量实证研究,创造几何学的是埃及人,几何学因土地测量而产生。</p>
+<p>几何是研究形的科学,以人的视觉思维为主导,培养人的观察能力、空间想象能力和洞察力。</p>
+<p>几何的发展首先是欧几里得的欧氏几何,其次是19世纪上半叶,非欧几何的诞生,再次是射影几何的繁荣,最后是几何学的统一。</p>
+<h1 id="尺规作图"><a href="#尺规作图" class="headerlink" title="尺规作图"></a>尺规作图</h1><p>尺规作图是有2000多年历史的古老的数学游戏，在被古希腊人发明之后在全世界影响巨大，成为了科学与数学思想的源泉。</p>
+<p><strong>阿基里德</strong>：</p>
+<ul>
+<li>给我一根杠杆，我能撬动地球。</li>
+<li>浮力定律的发现者。</li>
+<li>采用前人尺规作图的思想和朴素的极限思想，证明了球表面积公式和球体积公式。</li>
+</ul>
+<p><strong>牛顿</strong>：</p>
+<ul>
+<li>牛顿三定律</li>
+<li>万有引力定律</li>
+<li>微积分的发明人</li>
+<li>《自然哲学的数学原理》，其创作灵感得益于之前的尺规作图训练，这本书中的很多命题都是由几何作图的方式证明的，与我们现在能看到的教科书上的处理方式有所不同。</li>
+</ul>
+<p><strong>高斯：</strong></p>
+<ul>
+<li>十九岁，探索出了正十七边形的尺规作图方法<a target="_blank" rel="noopener external nofollow noreferrer" href="https://zhuanlan.zhihu.com/p/265906226">尺规作图正十七边形——高斯 - 知乎 (zhihu.com)</a></li>
+<li>贡献繁多</li>
+</ul>
+<p>与尺规作图有关联的问题和数学分支简略示意图</p>
+<p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211208115244270.png" alt="image-20211208115244270"></p>
+<h1 id="几何原本简介"><a href="#几何原本简介" class="headerlink" title="几何原本简介"></a>几何原本简介</h1><p>13卷，700多页，是对古希腊数学学派2个多世纪间研究的数学问题的收集、整理与完善。</p>
+<p>内容不只涉及有关尺规作图的几何问题，还有很多算术问题，如素数无穷多的证明在书的第九章。故也称《原本》。</p>
+<p>内容安排：</p>
+<p>采用<strong>公理化体系</strong></p>
+<p>一切开始于23条定义+5条公设+5条公理，推出了465个命题</p>
+<p>ps：欧几里德是这样区分公理与公设的：<br>第一,公理适合于一切科学,而公设是几何所特有的；<br>第二,公理是无需证明的真理,公设没有公理那样显然,但也是不加证明而承认其真实性的.<br>时至今日,人们已不在区分公理与公设了,都用公理一词来表明.</p>
+<h1 id="公理化体系"><a href="#公理化体系" class="headerlink" title="公理化体系"></a>公理化体系</h1><ol>
+<li>公理要尽可能的少，而且要直观简洁</li>
+<li>从不同的公理推理出来的同一个命题不能相互矛盾——一致</li>
+<li>公理不能由其它公理推导出来，不然该公理毫无意义——独立</li>
+<li>整个公理体系中的每个命题都能够由这些公理推理得到——完备</li>
+</ol>
+<h1 id="五大公理-common-notions-axioms"><a href="#五大公理-common-notions-axioms" class="headerlink" title="五大公理(common notions/axioms)"></a>五大公理(common notions/axioms)</h1><ol>
+<li>等于同量的量彼此相等。Things which are equal to the same thing are also equal to one another</li>
+<li>等量加等量，其和仍相等。If equals be added to equals, the wholes are equal</li>
+<li>等量减等量，其差仍相等。 If equals be subtracted from equals, the remainders are equal</li>
+<li>彼此能重合的物体是全等的。 Things which coincide with one another are equal to one another</li>
+<li>整体大于部分之和。The whole is greater than the part</li>
+</ol>
+<h1 id="五大公设"><a href="#五大公设" class="headerlink" title="五大公设"></a>五大公设</h1><ol>
+<li>两点可以连成一条直线</li>
+<li>线段可以任意延长</li>
+<li>绘定点o，及线段长r，可以以o为圆心，半径为r，可作一圆</li>
+<li>凡直角皆相等 That all right angles are equal to one another<img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211208102027448.png" alt="image-20211208102027448"></li>
+<li>平行公理 同平面内一条直线和另外两条直线相交，若在某一侧的两个内角的和小于二直角的和，则这二直线经无限延长后在这一侧相交 That, if a straight line falling on two straight lines make the interior angles on the same side less than two right angles, the two straight lines, if produced indefinitely, meet on that that side on which are the angles less than the two right angles<img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211208102340947.png" alt="image-20211208102340947"></li>
+</ol>
+<p>等价命题(从平行公设出发可以推出这个命题，从这个命题出发可以推出平行公设)：</p>
+<p>过直线外一点可做唯一一条平行直线</p>
+<p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211208102611266.png" alt="image-20211208102611266"></p>
+<p>三角形内角和为180度</p>
+<p>存在一对相似但不全等的三角形</p>
+<p>若两条直线都平行于第三条，那么这两条直线也平行</p>
+<p>等等等…</p>
+<h1 id="五大公设并不完备"><a href="#五大公设并不完备" class="headerlink" title="五大公设并不完备"></a>五大公设并不完备</h1><p>比如，不能解释求线段AB的中点，分别以A和B为圆心，画两个圆，为什么两圆必然相交，交于两点？<img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211208102928499.png" alt="image-20211208102928499"></p>
+<h1 id="几何原本中的一些定义和缺陷"><a href="#几何原本中的一些定义和缺陷" class="headerlink" title="几何原本中的一些定义和缺陷"></a>几何原本中的一些定义和缺陷</h1><p>Health的13卷及其陕西科学技术出版社2003年的译本。</p>
+<p>内容取自Heath写的《The thirteen books of Euclid’s Elements》，及其陕西科学技术出版社2003年的译本。</p>
+<h2 id="23条定义"><a href="#23条定义" class="headerlink" title="23条定义"></a>23条定义</h2><p>几何原本的定义只是对一些基本概念的并不精确的描述，如果我们以苛刻的眼光来看，原本中的定义是不严格的。</p>
+<h3 id="Book1中的一些定义"><a href="#Book1中的一些定义" class="headerlink" title="Book1中的一些定义"></a>Book1中的一些定义</h3><ol>
+<li>点是没有部分的 A point is that which has no part //<strong>什么是部分?</strong></li>
+<li>线只有长度没有宽度 A line is breadthless length  //<strong>什么是宽度和长度?</strong></li>
+<li>一线的两端是点 The extremities of a line are points</li>
+<li>直线是它上面的点一样地平放着的线 A straight line is a line which lies evenly with the points on itself  //<strong>什么是平放</strong>、均匀放置的点？<strong>如果点没有部分，线怎么会有长度</strong>？</li>
+<li>面只有长度和宽度 A surface is that which has length and breadth only. //<strong>如果线没有宽短，面的宽是从哪里来的？</strong></li>
+<li>面的边缘是线 The extremities of a surface are lines</li>
+<li>平面是它上面的直线一样地平放着的面 A plane surface is a surface which lies evenly with the straight lines on itself</li>
+</ol>
+<p>等等……</p>
+<h3 id="Book-XI-13卷-中的一些定义"><a href="#Book-XI-13卷-中的一些定义" class="headerlink" title="Book XI(13卷)中的一些定义"></a>Book XI(13卷)中的一些定义</h3><ol>
+<li>体有长、宽和高 A solid is that which has length, breadth and depth</li>
+<li>体的边界是面 An extremity of a solid is a surface</li>
+</ol>
+<p>等等……</p>
+<h3 id="Book1-中定义了的概念"><a href="#Book1-中定义了的概念" class="headerlink" title="Book1 中定义了的概念"></a>Book1 中定义了的概念</h3><p>点、线、直线、面、平面</p>
+<p>平面角、直角、钝角、锐角</p>
+<p>圆、圆心、直径、半圆</p>
+<p>三角形、等边三角形、等腰三角形</p>
+<p>四边形、正方形、长方形、菱形</p>
+<p>平行直线</p>
+<h1 id="尺规作图游戏规则"><a href="#尺规作图游戏规则" class="headerlink" title="尺规作图游戏规则"></a>尺规作图游戏规则</h1><h2 id="几点误区"><a href="#几点误区" class="headerlink" title="几点误区"></a>几点误区</h2><ol>
+<li>直尺上有刻度</li>
+<li>作图时，可以用圆规比好长度再去做另外一点</li>
+<li>可以借助三角板作垂线</li>
+<li>可以借助三角板加直尺做平行线</li>
+</ol>
+<h2 id="游戏规则-五大公设-postulates-假设-中的前三条"><a href="#游戏规则-五大公设-postulates-假设-中的前三条" class="headerlink" title="游戏规则-五大公设(postulates-假设)中的前三条"></a>游戏规则-五大公设(postulates-假设)中的前三条</h2><ol>
+<li>两点可以连成一条直线 To draw a straight line from any point to any point</li>
+<li>一条有限直线可以继续延长 to produce a straight line continuously in a straight line</li>
+<li>以任一点为心及任意距离可以画圆 To describe a circle with any centre and distance</li>
+</ol>
+<p>简单的讲：过任意两点可以做唯一的直线，以任意两点可以做唯一的圆</p>
+<h1 id="几何原本第一卷中的命题"><a href="#几何原本第一卷中的命题" class="headerlink" title="几何原本第一卷中的命题"></a>几何原本第一卷中的命题</h1><h2 id="命题1"><a href="#命题1" class="headerlink" title="命题1"></a>命题1</h2><p>在一个已知有限直线上作一个等边三角形</p>
+<p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213145312403.png" alt="image-20211213145312403"></p>
+<p>以A为圆心，AB为半径作圆A [公设3]</p>
+<p>以B为圆心，BA为半径作圆B [公设3]</p>
+<p>两圆交于点C //几何原本的公理体系实际上并不完善</p>
+<p>连接AC与BC [公设1]</p>
+<p>AC等于AB，并且BC等于BA [定义15]</p>
+<p>AB等于BA</p>
+<p>所以AC等于BC [公理1]</p>
+<p>ABC为等边三角形 [定义20]</p>
+<h2 id="命题2"><a href="#命题2" class="headerlink" title="命题2"></a>命题2</h2><p>由一已知点，作一线段等于已知线段</p>
+<p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213152719314.png" alt="image-20211213152719314"></p>
+<p>连接AB并作等边三角形ABD [公设1][命题1]</p>
+<p>以B为圆心，BC为半径作圆B [公设3]</p>
+<p>延长DB和DA [公设2]</p>
+<p>DB交圆于E</p>
+<p>以D为圆心，DE为半径作圆D [公设3]</p>
+<p>DA交圆D于F</p>
+<p>BC等于BE, DE等于DF [定义15]</p>
+<p>DA等于DB [定义20]</p>
+<p>AF等于BE, 从而等于BC [公理3][公理1]</p>
+<p>AF为所求</p>
+<h2 id="命题3"><a href="#命题3" class="headerlink" title="命题3"></a>命题3</h2><p>已知两条不相等的线段，试由大的上边截取一条线段使它等于另外一条</p>
+<p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213153557987.png" alt="image-20211213153557987"></p>
+<p>从A出发画出与BC相等的线段AE [命题2]</p>
+<p>以A为圆心，AE为半径，画圆 [公设3]</p>
+<p>圆A于AD交于点F</p>
+<p>AF等于AE [定义15]</p>
+<p>AF等于BC [公理1]</p>
+<h2 id="命题4"><a href="#命题4" class="headerlink" title="命题4"></a>命题4</h2><p>若两个三角形的两边和夹角分别相等，则这两个三角形全等。江湖人称边角边或SAS(side angle side)</p>
+<p>移动相等角的顶点，使角重合，由于两边相等，所以两边也重合，由于过两点只能做唯一一条直线，所以相等角的对边相等。另外两角的边都重合，故另外两角也相等。</p>
+<h3 id="平移、旋转、镜面对称——保距变换"><a href="#平移、旋转、镜面对称——保距变换" class="headerlink" title="平移、旋转、镜面对称——保距变换"></a>平移、旋转、镜面对称——保距变换</h3><p>距离、角度、面积、体积等量在这些变换下保持不变。</p>
+<p>保持距离的变换，称为保距变换，只有平移、旋转和镜面对称</p>
+<h3 id="命题4能推出的命题"><a href="#命题4能推出的命题" class="headerlink" title="命题4能推出的命题"></a>命题4能推出的命题</h3><p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213155719661.png" alt="image-20211213155719661"></p>
+<h2 id="第一卷命题内容梗概"><a href="#第一卷命题内容梗概" class="headerlink" title="第一卷命题内容梗概"></a>第一卷命题内容梗概</h2><p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213155827873.png" alt="image-20211213155827873"></p>
+<h2 id="第一卷的高潮，命题47"><a href="#第一卷的高潮，命题47" class="headerlink" title="第一卷的高潮，命题47"></a>第一卷的高潮，命题47</h2><p>几何原本中对勾股定理的证明</p>
+<p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213160528614.png" alt="image-20211213160528614"></p>
+<h1 id="几何原本第二卷中的命题"><a href="#几何原本第二卷中的命题" class="headerlink" title="几何原本第二卷中的命题"></a>几何原本第二卷中的命题</h1><h2 id="第二卷命题内容梗概"><a href="#第二卷命题内容梗概" class="headerlink" title="第二卷命题内容梗概"></a>第二卷命题内容梗概</h2><p>第二卷也被称为 几何代数</p>
+<p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213161218564.png" alt="image-20211213161218564"></p>
+<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ol>
+<li>称两邻边夹直角的平行四边形为矩形 Any rectangular(矩形的) parallelogram(平行四边形) is said to be contained by the two straight lines containing the right angle</li>
+<li>在任何平行四边形面片中，以此形的对角线为对角线的一个小平行四边形和两个相应的补形一起叫做拐尺形 And in any parallelogrammic area let anyone whatever of the parallelograms about its diameter(对角线) with the two complements(补形) be called a gnomon(拐尺形)<img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213161918524.png" alt="image-20211213161918524"></li>
+</ol>
+<h2 id="命题1-1"><a href="#命题1-1" class="headerlink" title="命题1"></a>命题1</h2><p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213162442737.png" alt="image-20211213162442737"></p>
+<p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213162517943.png" alt="image-20211213162517943"></p>
+<p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213162531972.png" alt="image-20211213162531972"></p>
+<h2 id="命题4-1"><a href="#命题4-1" class="headerlink" title="命题4"></a>命题4</h2><p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213162618726.png" alt="image-20211213162618726"></p>
+<p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213162633777.png" alt="image-20211213162633777"></p>
+<p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213162646253.png" alt="image-20211213162646253"></p>
+<h2 id="第二卷前10个命题的代数表达"><a href="#第二卷前10个命题的代数表达" class="headerlink" title="第二卷前10个命题的代数表达"></a>第二卷前10个命题的代数表达</h2><p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213162724739.png" alt="image-20211213162724739"></p>
+<h1 id="几何原本第三卷"><a href="#几何原本第三卷" class="headerlink" title="几何原本第三卷"></a>几何原本第三卷</h1><p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213163331394.png" alt="image-20211213163331394"></p>
+<p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213163355645.png" alt="image-20211213163355645"></p>
+<h1 id="几何原本第四卷"><a href="#几何原本第四卷" class="headerlink" title="几何原本第四卷"></a>几何原本第四卷</h1><p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213163409643.png" alt="image-20211213163409643"></p>
+<p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213163427145.png" alt="image-20211213163427145"></p>
+<h1 id="几何原本第五卷：比例论"><a href="#几何原本第五卷：比例论" class="headerlink" title="几何原本第五卷：比例论"></a>几何原本第五卷：比例论</h1><p>提出者：欧多克索斯(Rudoxus)，柏拉图的学生和好友</p>
+<h2 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h2><ol>
+<li>当一个较小的量能量尽一个较大的量时，我们把较小量叫做较大量的一部分 A magnitude is a part of a magnitude，the less of the greater，when it measures the greater</li>
+<li>当一个较大量能被一个较小量量尽时，我们把较大的量叫做较小的量的倍量 The greater is a multiple of the less when it is measure by the less</li>
+<li>两个同类量彼此之间的一种大小关系叫做比 A ratio is a sort of relation in respect of size between two magnitudes of the same kind</li>
+<li>把一个量几倍以后能大于另外一个量时，则说这两个量彼此之间有一个比 Magnitudes are said to have a ratio to one another which are capable，when multipled，of exceeding one another</li>
+<li>有四个量，第一量比第二量与第三辆比第四量叫做有相同比，如果对第一与第三个量取任何同倍数，又对第二与第四个量取任何同倍数，而第一与第二量之间依次有大于、等于或小于的关系，那么第三与第四倍量之间便有相应的关系 Magnitudes are said to be in the same ratio，the first to the second and the third to the fourth，when，if any equimultiples whatever be taken of the first and third，and any equimultiples whatever of the second and the fourth，the former equimultiples alike exceed，are alike equal to，or alike fall short of the latter equimultiples respectively taken in corresponding order</li>
+</ol>
+<p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213174945026.png" alt="image-20211213174945026"></p>
+<p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213175405917.png" alt="image-20211213175405917"></p>
+<p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211213175418947.png" alt="image-20211213175418947"></p>
+<h1 id="几何原本第六卷"><a href="#几何原本第六卷" class="headerlink" title="几何原本第六卷"></a>几何原本第六卷</h1><h1 id="什么是定义？"><a href="#什么是定义？" class="headerlink" title="什么是定义？"></a>什么是定义？</h1><h2 id="亚里士多德"><a href="#亚里士多德" class="headerlink" title="亚里士多德"></a>亚里士多德</h2><ul>
+<li><p>下定义不过是给个新名字，在给出定义的时候，必须使用已有明确意思的事物。</p>
+</li>
+<li><p>一个理论中最基本的那些东西，是无法定义和证明的。</p>
+</li>
+</ul>
+<p>对于几何中最基本的的点、线、面的概念，我们该怎么定义呢？这个问题困扰了世人很久，2000年后，希尔伯特横空出世。</p>
+<h2 id="无法定义的基本概念"><a href="#无法定义的基本概念" class="headerlink" title="无法定义的基本概念"></a>无法定义的基本概念</h2><p>两千年中，数学家们不断尝试给”点、线、面”一个严谨的定义，然而始终做不到，欧几里得的几何学地基不牢，大厦将倾。</p>
+<p>大家开始接受一个事实，就是在任何一组几何公理体系中，就像它必然存在某些无法证明的基本事实一样，它也必然会存在一些无法定义的概念，如点、线、面。它们无法用已知的事物定义，我们只能通过描述其性质，以描述这些基本存在。</p>
+<h2 id="大卫·希尔伯特-David-Hilbert"><a href="#大卫·希尔伯特-David-Hilbert" class="headerlink" title="大卫·希尔伯特(David Hilbert)"></a>大卫·希尔伯特(David Hilbert)</h2><ul>
+<li>对于几何中最基本的点、线、面作为不加定义的基础概念，称之为几何的基本元素，直接用符号来表示，正如希尔伯特所说“我们必定可以用‘桌子、椅子、啤酒杯’来代替‘点、线、面’ ”，它们不再是看得见摸得着的东西来定义了，它们成了纯粹的抽象符号。同时它避开了”线是由点构成的，面是由线构成的”这一设定，将点、线、面设定成了三个独立的元素个体。</li>
+<li>那么如何描述它们的性质，以及它们之间的联系呢？这就需要在三者之间设定一些关系和公理了。</li>
+<li>1899年出版了《几何基础》，在这部著作中，希尔伯特创立了一个新公理系统(史称“希尔伯特公理系统”)。他从叙述20条公理开始，其中涉及六个本原概念(作为元素的点、线、面和它们之间的三种关系“属于”、“介于”、“全等于”)和五类公理，分别描述关联、顺序、全等、平行和连续性。 </li>
+<li>公理体系的标准也是希尔伯特提出来的：从不同的公理推理出来的同一个命题不能相互矛盾——一致；公理不能由其它公理推导出来，不然该公理毫无意义——独立；整个公理体系中的每个命题都能够由这些公理推理得到——完备。</li>
+</ul>
+<h1 id="希尔伯特的公理体系"><a href="#希尔伯特的公理体系" class="headerlink" title="希尔伯特的公理体系"></a>希尔伯特的公理体系</h1><h2 id="The-Elements：points-straight-lines-and-planes"><a href="#The-Elements：points-straight-lines-and-planes" class="headerlink" title="The Elements：points, straight lines and planes"></a>The Elements：points, straight lines and planes</h2><p>Let us consider three distinct systems of things. The things composing the ﬁrst system, we will call points and designate them by the letters A, B, C,…; those of the second, we will call straight lines and designate them by the letters a, b, c,…; and those of the third system, we will call planes and designate them by the Greek letters α, β, γ,…The points are called the elements of linear geometry; the points and straight lines, the elements of plane geometry; and the points, lines, and planes, the elements of the geometry of space or the elements of space. </p>
+<h2 id="Mutual-relations"><a href="#Mutual-relations" class="headerlink" title="Mutual relations"></a>Mutual relations</h2><p>We think of these points, straight lines, and planes as having certain mutual relations, which we indicate by means of such words as “are situated(位于),” “between(介于),” “parallel(平行),” “congruent(全等),” “continuous(连续),” etc. The complete and exact description of these relations follows as a consequence of the axioms of geometry(公理描述关系). These axioms may be arranged in ﬁve groups. Each of these groups expresses, by itself, certain related fundamental facts of our intuition(每一个公理都与我们直接感受到的基本事实相关). We will name these groups as follows: I, 1–7. Axioms of connection. II, 1–5. Axioms of order. III. Axiom of parallels (Euclid’s axiom). IV, 1–6. Axioms of congruence. V. Axiom of continuity (Archimedes’s axiom).</p>
+<h2 id="Axioms-of-connection"><a href="#Axioms-of-connection" class="headerlink" title="Axioms of connection"></a>Axioms of connection</h2><p>The axioms of this group establish a connection between the concepts indicated above(这组公理建立三元素的关联); namely, points, straight lines, and planes. These axioms are as follows:<br>I, 1. Two distinct points A and B always completely determine a straight line a. We write AB = a or BA = a. 两个不同的点A,B总是完全确定一条直线a(点A,B在直线a上)</p>
+<p>I, 2. Any two distinct points of a straight line completely determine that line; that is, if AB = a and AC = a, where B≠ C, then is also BC = a. 直线上的任意不同两点确定这条直线，如果点A、B在直线a上，点A、C也在直线a上，且B、C是不同的点，那么点B、C也确定这条直线(在直线a上)。<br>I, 3. Three points A, B, C not situated in the same straight line always completely determine a plane α. We write ABC = a.三个不在同一条直线上的点总是完全确定一个平面α(点A,B,C在平面α上)</p>
+<p>I, 4. Any three points A, B, C of a plane α, which do not lie in the same straight line,completely determine that plane. 位于平面α的任意三点A、B、C，若不位于同一条直线上，可以完全确定该平面 </p>
+<p>I, 5. If two points A, B of a straight line a lie in a plane α, then every point of a lies in α. 如果直线a上的两点A、B位于平面α，那么直线上的所有点都位于α<br>In this case we say: “The straight line a lies in the plane α,” etc.<br>I, 6. If two planes α, β have a point A in common, then they have at least a second point B in common. 如果平面α、β都有点A，那么他们至少都有第二个点B</p>
+<p>I, 7. Upon every straight line there exist at least two points, in every plane at least three points not lying in the same straight line, and in space there exist at least four points not lying in a plane. 每条直线上至少有2个电，每个平面内至少有3个不位于同一直线的点，每个空间内至少有4个不位于同一平面的点。</p>
+<p>Axioms I, 1–2 contain statements concerning points and straight lines only; that is, concerning the elements of plane geometry. We will call them,therefore,the plane axioms of group I, in order to distinguish them from the axioms I, 3–7, which we will designate brieﬂy as the space axioms of this group. Of the theorems(定理) which follow from the axioms I, 3–7, we shall mention only the following:<br>Theorem 1. Two straight lines of a plane have either one point or no point in common; two planes have no point in common or a straight line in common; a plane and a straight line not lying in it have no point or one point in common. </p>
+<p>Theorem 2. Through a straight line and a point not lying in it, or through two distinct straight lines having a common point, one and only one plane may be made to pass.</p>
+<h2 id="Axioms-of-order"><a href="#Axioms-of-order" class="headerlink" title="Axioms of order"></a>Axioms of order</h2><p>The axioms of this group deﬁne the idea expressed by the word “between,”(这组公理定义“介于”这个词表达的含义) and make possible, upon the basis of this idea, an order of sequence of the points upon a straight line, in a plane, and in space. The points of a straight line have a certain relation to one another which the word “between” serves to describe. The axioms of this group are as follows:<br>II, 1. If A, B,C are points of a straight line and B lies between A and C,then B lies also between C and A. 如果点A、B、C位于一条直线上，并且B位于A和C之间，那么B也位于C和A之间。</p>
+<p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211212121018076.png" alt="image-20211212121018076"></p>
+<p>II, 2. If A and C are two points of a straight line, then there exists at least one point B lying between A and C and at least one point D so situated that C lies between A and D. 如果A、C是一条直线上的两点，那么存在至少一个点B位于A和C之间，并且存在至少一个点D，点D如此位于直线，使得C位于A和D之间。<br>Fig. 2.<br>II, 3. Of any three points situated on a straight line, there is always one and only one which lies between the other two. 对于位于一条直线的任意三个点，总是只有一个点位于另外两点之间。 </p>
+<p>II, 4. Any four points A, B, C, D of a straight line can always be so arranged that B shall lie between A and C and also between A and D, and, furthermore, that C shall lie between A and D and also between B and D. 任意四个位于一条直线的点A、B、C、D，总是能如此安排，B位于A和C、A和D之间，且C位于A和D、B和D之间</p>
+<p>Definition. We will call the system of two points A and B, lying upon a straight line, a segment and denote it by AB or BA(由两点构成的，位于一条直线上的系统，称作线段). The points lying between A and B are called the points of the segment AB or the points lying within the segment AB. All other points of the straight line are referred to as the points lying outside the segment AB.(位于点A、B之间的点称作线段AB上的点，其他点称作线段AB外的点) The points A and B are called the extremities of the segment AB.(点A、B称作线段AB的边界)<br>II, 5. Let A, B, C be three points not lying in the same straight line and let a be a straight line lying in the plane ABC and not passing through any of the points A, B, C. Then, if the straight line a passes through a point of the segment AB, it will also pass through either a point of the segment BC or a point of the segment AC.  A、B、C是不位于同一条直线上的三点，直线a是位于平面ABC但是不经过A、B、C任何一点的直线。那么，如果a经过线段AB的一点，它也经过线段BC或线段AC的一点。</p>
+<p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211212122810552.png" alt="image-20211212122810552"></p>
+<p>Axioms II, 1–4 contain statements concerning the points of a straight line only, and, hence, we will call them the linear axioms of group II. Axiom II, 5 relates to the elements of plane geometry and, consequently, shall be called the plane axiom of group II.</p>
+<h2 id="Axioms-of-parallels-EUCLID’S-AXIOM"><a href="#Axioms-of-parallels-EUCLID’S-AXIOM" class="headerlink" title="Axioms of parallels (EUCLID’S AXIOM)"></a>Axioms of parallels (EUCLID’S AXIOM)</h2><p>The introduction(使用) of this axiom simpliﬁes greatly the fundamental principles of geometry and facilitates in no small degree(不小程度的) its development. This axiom may be expressed as follows: </p>
+<p>III. In a plane α there can be drawn through any point A, lying outside of a straight line a, one and only one straight line which does not intersect the line a. This straight line is called the parallel to a through the given point A. 在平面α中，可以经过在直线a外的一点A，画出一条且只有一条直线与直线a不相交。这个直线叫做经过给定点A的a的平行直线。</p>
+<h2 id="Axioms-of-congruence"><a href="#Axioms-of-congruence" class="headerlink" title="Axioms of congruence"></a>Axioms of congruence</h2><p>The axioms of this group deﬁne the idea of congruence or displacement. Segments stand in a certain relation to one another which is described by the word “congruent.”<br> IV, I. If A, B are two points on a straight line a, and if A0 is a point upon the same or another straight line a0,then,upon a given side of A0 on the straight line a0,we can always ﬁnd one and only one point B0 so that the segment AB(or BA) is congruent to the segment A0B0. We indicate this relation by writing AB≡ A0B0. Every segment is congruent to itself; that is, we always have AB≡ AB. We can state the above axiom brieﬂy by saying that every segment can be laid off upon a given side of a given point of a given straight line in one and and only one way.  如果A、B是直线a的两点，A0是同一或另一直线a0的一点，那么，在A0给定的一侧，我们总能找到一个且仅有一个点B0，使得线段AB全等于线段B0. 我们用AB≡ A0B0表示这种关系。我们可以简介地表述上述公理：每一个线段可以布置在给定直线给定点的给定侧，以一种且仅一种方式。</p>
+<p>IV, 2. If a segment AB is congruent to the segment A0B0 and also to the segment A00B00, then the segment A0B0 is congruent to the segment A00B00; that is, if AB ≡ A0B and AB≡ A00B00, then A0B0 ≡ A00B00.  线段AB与A0B0全等，线段AB与A00B00全等，则线段A0B0与A00B00全等。</p>
+<p>IV,3. Let AB and BC be two segments of a straight line a which have no points in common aside from the point B, and, furthermore, let A0B0 and B0C0 be two segments of the same or of another straight line a0 having, likewise, no point other than B0 in common. Then, if AB≡ A0B0 and BC ≡ B0C0, we have AC ≡ A0C0. 线段AB和BC是直线a的两个线段，AB和BC只有公共点B，线段A0B0和B0C0是同一或另一直线a0的两个线段，同样只有公共点B0，那么，AB≡ A0B0且BC≡ B0C0，就有AC≡ A0C0</p>
+<p><img src="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/image-20211212181906062.png" alt="image-20211212181906062"></p>
+<p>Definitions. Let α be any arbitrary plane and h, k any two distinct half-rays(射线) lying in α and emanating(产生自) from the point O so as to form a part of two different straight lines. We call the system formed by these two half-rays h, k an angle(角) and represent it by the symbol ∠(h,k) or ∠(k,h). From axioms II, 1–5, it follows readily that the half-rays h and k, taken together with the point O, divide the remaining points of the plane α into two regions having the following property: If A is a point of one region and B a point of the other, then every broken line(虚线) joining(连接) A and B either passes through O or has a point in common with one of the half-rays h, k. If, however, A, A0 both lie within the same region, then it is always possible to join these two points by a broken line which neither passes through O nor has a point in common with either of the half-rays h, k. One of these two regions is distinguished from the other in that the segment joining any two points of this region lies entirely within the region. The region so characterised is called the interior(内部) of the angle (h,k). To distinguish the other region from this, we call it the exterior(外部) of the angle (h,k). The half rays h and k are called the sides of the angle, and the point O is called the (顶点)vertex of the angle. </p>
+<p>IV, 4. Let an angle (h,k) be given in the plane α and let a straight line a0 be given in a plane α0. Suppose also that, in the plane α0, a deﬁnite side of the straight line a0 be assigned. Denote by h0 a half-ray of the straight line a0 emanating from a point O0 of this line. Then in the plane α0 there is one and only one half-ray k0 such that the angle (h,k), or (k,h), is congruent to the angle (h0,k0) and at the same time all interior points of the angle (h0,k0) lie upon the given side of a0. We express this relation by means of the notation ∠(h,k)≡∠(h0,k0) Every angle is congruent to itself; that is, ∠(h,k)≡∠(h,k) or ∠(h,k)≡∠(k,h) We say, brieﬂy, that every angle in a given plane can be laid off upon a given side of a given half-ray in one and only one way. 角(h,k)在平面α上，直线a0在平面α0上。在平面α上，指定直线a0的一侧，由a0上一点00产生的属于a0的射线标记为h0.在平面α0上有且只有一条射线k0，使得角(h,k)与角(h0,k0)全等<br>IV, 5. If the angle (h,k) is congruent to the angle (h0,k0) and to the angle (h00,k00), then the angle (h0,k0) is congruent to the angle (h00,k00); that is to say, if ∠(h,k) ≡∠(h0,k0) and ∠(h,k)≡∠(h00,k00), then∠(h0,k0)≡∠(h00,k00). 此时所有角(h0,k0)内部的点都位于直线a0指定的一侧。我们用标记 ∠(h,k)≡∠(h0,k0)表达这种关系，每个角都全等它自己, 即∠(h,k)≡∠(h,k) 或 ∠(h,k)≡∠(k,h)。我们简单的说，在给定平面上的每个角可以被转移到指定射线的指定一侧，有且仅有一种方式。</p>
+<p>Suppose we have given a triangle ABC. Denote by h, k the two half-rays emanating from A and passing respectively through B and C. The angle (h,k) is then said to be the angle included by the sides AB and AC, or the one opposite to the side BC in the triangle ABC. It contains all of the interior points of the triangle ABC and is represented by the symbol ∠BAC, or by ∠A. </p>
+<p>IV, 6. If, in the two triangles ABC and A0B0C0 the congruences AB≡ A0B0, AC ≡ A0C0, ∠BAC ≡∠B0A0C0 hold, then the congruences ∠ABC ≡∠A0B0C0and∠ACB≡∠A0C0B0 also hold. 如果再两个三角形中，两边全等，其夹角也全等，那么另外两个角也全等</p>
+<p>Axioms IV, 1–3 contain statements concerning the congruence of segments of a straight line only. They may, therefore, be called the linear axioms of group IV. Axioms IV, 4, 5 contain statements relating to the congruence of angles. Axiom IV, 6 gives the connection between the congruence of segments and the congruence of angles. Axioms IV, 4–6 contain statements regarding the elements of plane geometry and may be called the plane axioms of group IV.</p>
+<h2 id="Axioms-of-continuity-To-Do"><a href="#Axioms-of-continuity-To-Do" class="headerlink" title="Axioms of continuity To Do"></a>Axioms of continuity To Do</h2><p>姑且不谈，先看实数的连续型，即可比数和不可比数在数轴上的分布情况。</p>
+<h2 id="希尔伯特怎么证明其几何公理体系的一致性，独立性，完备性-To-Do"><a href="#希尔伯特怎么证明其几何公理体系的一致性，独立性，完备性-To-Do" class="headerlink" title="希尔伯特怎么证明其几何公理体系的一致性，独立性，完备性 To Do"></a>希尔伯特怎么证明其几何公理体系的一致性，独立性，完备性 To Do</h2><p>坑待填</p>
+<h1 id="哥德尔不完备性定理-To-Do"><a href="#哥德尔不完备性定理-To-Do" class="headerlink" title="哥德尔不完备性定理 To Do"></a>哥德尔不完备性定理 To Do</h1><p>那一年是1931年，希尔伯特的几何公理体系面世三十年之际，<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.zhihu.com/search?q=奥地利&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra={&quot;sourceType&quot;%3A&quot;article&quot;%2C&quot;sourceId&quot;%3A384485261}">奥地利</a>数学家、逻辑学家、哲学家库尔特∙哥德尔（Kurt Gödel，1906—1978）发表了一篇论文，这一篇论文中的定理就是数学和逻辑学中<strong>具有划时代意义的定理——哥德尔不完备性定理</strong>.</p>
+<p>在这个定理中，哥德尔证明了<strong>任何一个形式系统(希尔伯特的几何公理体系正是一个几何的形式化系统)，只要包括了简单的<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.zhihu.com/search?q=初等数论&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra={&quot;sourceType&quot;%3A&quot;article&quot;%2C&quot;sourceId&quot;%3A384485261}">初等数论</a>描述，而且是自洽的，它必定包含某些系统内所允许的方法既不能证明真也不能证伪的命题.</strong></p>
+<p>呃，有点绕，我们说得再直白点，前面我们说到，希尔伯特所建立的几何公理体系有三大基本标准：相容性，独立性，完备性. 而哥德尔不完备定理则证明了这三个标准无法同时具备，即<strong>如果公理体系满足相容性，那么它就不可能是完备的.</strong> 换句话说，在一个不存在矛盾的公理体系中，必然存在某些命题没办法证明其是真的还是假的.(当然这些命题只是在这个公理体系中无法证明，并不代表它们在其它公理体系中也不能证明.)</p>
+<p>至于哥德尔怎么证的，尚且不知，坑待填</p>
+<h1 id="非欧几何-球面几何，双曲几何"><a href="#非欧几何-球面几何，双曲几何" class="headerlink" title="非欧几何-球面几何，双曲几何"></a>非欧几何-球面几何，双曲几何</h1><p>再说回到欧几里得几何，在欧几里得的几何公理体系中，那个更致命的问题是什么？</p>
+<p>答案是：<strong><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.zhihu.com/search?q=平行公设&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra={&quot;sourceType&quot;%3A&quot;article&quot;%2C&quot;sourceId&quot;%3A384485261}">平行公设</a>.</strong></p>
+<p>我们来看欧几里得的公理体系中的五条公设：</p>
+<blockquote>
+<p>★ 1.过两点能作且只能作一直线； 2.线段(有限直线)可以无限地延长； 3.以任一点为圆心,任意长为半径,可作一圆； 4.凡是直角都相等； 5.同平面内一条直线和另外两条直线相交，若在直线同侧的两个<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.zhihu.com/search?q=内角&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra={&quot;sourceType&quot;%3A&quot;article&quot;%2C&quot;sourceId&quot;%3A384485261}">内角</a>之和小于180°，则这两条直线经无限延长后在这一侧一定相交.<br>”</p>
+</blockquote>
+<p>仔细观察会发现，<strong>前面四条讲的都是在有限范围内的图形，我们是可以直观上观测并验证的基本事实</strong>，然而第五条就不一样了，“经过无限延长后在这一侧相交”，<strong>无限延长？你能看见尽头？你怎么验证其是否真的相交了？</strong></p>
+<p>这条<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.zhihu.com/search?q=公设&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra={&quot;sourceType&quot;%3A&quot;article&quot;%2C&quot;sourceId&quot;%3A384485261}">公设</a>引起了无数数学家们的注意，既然无法验证，那么，是否可以由其它几条推出这条呢？如果可以的话，就说明这条公设并不具备独立性，我们就可以把它拿下来，不再作为公理了. 于是数学家们前赴后继，想要证明这一条，却屡屡失败. 终于，数学家们开始意识到，这个公设确实是独立的.</p>
+<p>那么，既然它是独立的，我们就可以尝试建立一个相似的公理体系，其它公设都依然成立，<strong>唯独不满足平行公设</strong>，1830年Lobachevsky和Bolyai给出了两个不同的几何模型。</p>
+<p><strong>非欧几何诞生了.</strong></p>
+<p>至此，<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.zhihu.com/search?q=几何学&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra={&quot;sourceType&quot;%3A&quot;article&quot;%2C&quot;sourceId&quot;%3A384485261}">几何学</a>开始分裂了，也开始蓬勃发展了.</p>
+<p>非欧几何我们陌生吗？并不陌生，它和我们生活息息相关. 举个简单例子，拿个地球仪观察一下，南北极之间有几条<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.zhihu.com/search?q=平行线&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra={&quot;sourceType&quot;%3A&quot;article&quot;%2C&quot;sourceId&quot;%3A384485261}">平行线</a>？</p>
+<p>答：无数条. 每一条经度线都平行. 这就是不满足平行公设的<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.zhihu.com/search?q=球面几何&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra={&quot;sourceType&quot;%3A&quot;article&quot;%2C&quot;sourceId&quot;%3A384485261}">球面几何</a>，也是非欧几何的一种</p>
+<ul>
+<li></li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined" rel="external nofollow noreferrer">XuSheng</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://xushengim.github.io/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/">https://xushengim.github.io/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://xushengim.github.io" target="_blank">MyMind</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/math.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/12/13/%E5%BE%AE%E7%A7%AF%E5%88%86/"><img class="prev-cover" src="/img/math.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">微积分</div></div></a></div><div class="next-post pull-right"><a href="/2021/12/06/%E6%95%B0%E5%AD%A6%E5%8D%B1%E6%9C%BA/"><img class="next-cover" src="/img/math.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">数学危机</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81NDYzNS8zMTEwNg=="></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/touxiang.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">XuSheng</div><div class="author-info__description">九层之台起于垒土,从垒土开始,认识真实的世界</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/xushengim" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:xushengim@163.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E7%9A%84%E5%BC%80%E5%A7%8B"><span class="toc-number">1.</span> <span class="toc-text">数学的开始</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E5%92%8C%E6%95%B0%E5%AD%A6"><span class="toc-number">2.</span> <span class="toc-text">物理和数学</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%A0%E4%BD%95%E4%B8%80%E8%AF%8D%E7%9A%84%E7%94%B1%E6%9D%A5%EF%BC%8C%E7%9B%AE%E7%9A%84%E5%92%8C%E5%8F%91%E5%B1%95"><span class="toc-number">3.</span> <span class="toc-text">几何一词的由来，目的和发展</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B0%BA%E8%A7%84%E4%BD%9C%E5%9B%BE"><span class="toc-number">4.</span> <span class="toc-text">尺规作图</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%A0%E4%BD%95%E5%8E%9F%E6%9C%AC%E7%AE%80%E4%BB%8B"><span class="toc-number">5.</span> <span class="toc-text">几何原本简介</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%AC%E7%90%86%E5%8C%96%E4%BD%93%E7%B3%BB"><span class="toc-number">6.</span> <span class="toc-text">公理化体系</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%94%E5%A4%A7%E5%85%AC%E7%90%86-common-notions-axioms"><span class="toc-number">7.</span> <span class="toc-text">五大公理(common notions&#x2F;axioms)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%94%E5%A4%A7%E5%85%AC%E8%AE%BE"><span class="toc-number">8.</span> <span class="toc-text">五大公设</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%94%E5%A4%A7%E5%85%AC%E8%AE%BE%E5%B9%B6%E4%B8%8D%E5%AE%8C%E5%A4%87"><span class="toc-number">9.</span> <span class="toc-text">五大公设并不完备</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%A0%E4%BD%95%E5%8E%9F%E6%9C%AC%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9A%E4%B9%89%E5%92%8C%E7%BC%BA%E9%99%B7"><span class="toc-number">10.</span> <span class="toc-text">几何原本中的一些定义和缺陷</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#23%E6%9D%A1%E5%AE%9A%E4%B9%89"><span class="toc-number">10.1.</span> <span class="toc-text">23条定义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Book1%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9A%E4%B9%89"><span class="toc-number">10.1.1.</span> <span class="toc-text">Book1中的一些定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Book-XI-13%E5%8D%B7-%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AE%9A%E4%B9%89"><span class="toc-number">10.1.2.</span> <span class="toc-text">Book XI(13卷)中的一些定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Book1-%E4%B8%AD%E5%AE%9A%E4%B9%89%E4%BA%86%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-number">10.1.3.</span> <span class="toc-text">Book1 中定义了的概念</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B0%BA%E8%A7%84%E4%BD%9C%E5%9B%BE%E6%B8%B8%E6%88%8F%E8%A7%84%E5%88%99"><span class="toc-number">11.</span> <span class="toc-text">尺规作图游戏规则</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%A0%E7%82%B9%E8%AF%AF%E5%8C%BA"><span class="toc-number">11.1.</span> <span class="toc-text">几点误区</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B8%B8%E6%88%8F%E8%A7%84%E5%88%99-%E4%BA%94%E5%A4%A7%E5%85%AC%E8%AE%BE-postulates-%E5%81%87%E8%AE%BE-%E4%B8%AD%E7%9A%84%E5%89%8D%E4%B8%89%E6%9D%A1"><span class="toc-number">11.2.</span> <span class="toc-text">游戏规则-五大公设(postulates-假设)中的前三条</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%A0%E4%BD%95%E5%8E%9F%E6%9C%AC%E7%AC%AC%E4%B8%80%E5%8D%B7%E4%B8%AD%E7%9A%84%E5%91%BD%E9%A2%98"><span class="toc-number">12.</span> <span class="toc-text">几何原本第一卷中的命题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E9%A2%981"><span class="toc-number">12.1.</span> <span class="toc-text">命题1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E9%A2%982"><span class="toc-number">12.2.</span> <span class="toc-text">命题2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E9%A2%983"><span class="toc-number">12.3.</span> <span class="toc-text">命题3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E9%A2%984"><span class="toc-number">12.4.</span> <span class="toc-text">命题4</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B9%B3%E7%A7%BB%E3%80%81%E6%97%8B%E8%BD%AC%E3%80%81%E9%95%9C%E9%9D%A2%E5%AF%B9%E7%A7%B0%E2%80%94%E2%80%94%E4%BF%9D%E8%B7%9D%E5%8F%98%E6%8D%A2"><span class="toc-number">12.4.1.</span> <span class="toc-text">平移、旋转、镜面对称——保距变换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E9%A2%984%E8%83%BD%E6%8E%A8%E5%87%BA%E7%9A%84%E5%91%BD%E9%A2%98"><span class="toc-number">12.4.2.</span> <span class="toc-text">命题4能推出的命题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E5%8D%B7%E5%91%BD%E9%A2%98%E5%86%85%E5%AE%B9%E6%A2%97%E6%A6%82"><span class="toc-number">12.5.</span> <span class="toc-text">第一卷命题内容梗概</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E5%8D%B7%E7%9A%84%E9%AB%98%E6%BD%AE%EF%BC%8C%E5%91%BD%E9%A2%9847"><span class="toc-number">12.6.</span> <span class="toc-text">第一卷的高潮，命题47</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%A0%E4%BD%95%E5%8E%9F%E6%9C%AC%E7%AC%AC%E4%BA%8C%E5%8D%B7%E4%B8%AD%E7%9A%84%E5%91%BD%E9%A2%98"><span class="toc-number">13.</span> <span class="toc-text">几何原本第二卷中的命题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E5%8D%B7%E5%91%BD%E9%A2%98%E5%86%85%E5%AE%B9%E6%A2%97%E6%A6%82"><span class="toc-number">13.1.</span> <span class="toc-text">第二卷命题内容梗概</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-number">13.1.1.</span> <span class="toc-text">定义</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E9%A2%981-1"><span class="toc-number">13.2.</span> <span class="toc-text">命题1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E9%A2%984-1"><span class="toc-number">13.3.</span> <span class="toc-text">命题4</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E5%8D%B7%E5%89%8D10%E4%B8%AA%E5%91%BD%E9%A2%98%E7%9A%84%E4%BB%A3%E6%95%B0%E8%A1%A8%E8%BE%BE"><span class="toc-number">13.4.</span> <span class="toc-text">第二卷前10个命题的代数表达</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%A0%E4%BD%95%E5%8E%9F%E6%9C%AC%E7%AC%AC%E4%B8%89%E5%8D%B7"><span class="toc-number">14.</span> <span class="toc-text">几何原本第三卷</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%A0%E4%BD%95%E5%8E%9F%E6%9C%AC%E7%AC%AC%E5%9B%9B%E5%8D%B7"><span class="toc-number">15.</span> <span class="toc-text">几何原本第四卷</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%A0%E4%BD%95%E5%8E%9F%E6%9C%AC%E7%AC%AC%E4%BA%94%E5%8D%B7%EF%BC%9A%E6%AF%94%E4%BE%8B%E8%AE%BA"><span class="toc-number">16.</span> <span class="toc-text">几何原本第五卷：比例论</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89-1"><span class="toc-number">16.1.</span> <span class="toc-text">定义</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%A0%E4%BD%95%E5%8E%9F%E6%9C%AC%E7%AC%AC%E5%85%AD%E5%8D%B7"><span class="toc-number">17.</span> <span class="toc-text">几何原本第六卷</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%AE%9A%E4%B9%89%EF%BC%9F"><span class="toc-number">18.</span> <span class="toc-text">什么是定义？</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7"><span class="toc-number">18.1.</span> <span class="toc-text">亚里士多德</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A0%E6%B3%95%E5%AE%9A%E4%B9%89%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">18.2.</span> <span class="toc-text">无法定义的基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E5%8D%AB%C2%B7%E5%B8%8C%E5%B0%94%E4%BC%AF%E7%89%B9-David-Hilbert"><span class="toc-number">18.3.</span> <span class="toc-text">大卫·希尔伯特(David Hilbert)</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%8C%E5%B0%94%E4%BC%AF%E7%89%B9%E7%9A%84%E5%85%AC%E7%90%86%E4%BD%93%E7%B3%BB"><span class="toc-number">19.</span> <span class="toc-text">希尔伯特的公理体系</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#The-Elements%EF%BC%9Apoints-straight-lines-and-planes"><span class="toc-number">19.1.</span> <span class="toc-text">The Elements：points, straight lines and planes</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Mutual-relations"><span class="toc-number">19.2.</span> <span class="toc-text">Mutual relations</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Axioms-of-connection"><span class="toc-number">19.3.</span> <span class="toc-text">Axioms of connection</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Axioms-of-order"><span class="toc-number">19.4.</span> <span class="toc-text">Axioms of order</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Axioms-of-parallels-EUCLID%E2%80%99S-AXIOM"><span class="toc-number">19.5.</span> <span class="toc-text">Axioms of parallels (EUCLID’S AXIOM)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Axioms-of-congruence"><span class="toc-number">19.6.</span> <span class="toc-text">Axioms of congruence</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Axioms-of-continuity-To-Do"><span class="toc-number">19.7.</span> <span class="toc-text">Axioms of continuity To Do</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%8C%E5%B0%94%E4%BC%AF%E7%89%B9%E6%80%8E%E4%B9%88%E8%AF%81%E6%98%8E%E5%85%B6%E5%87%A0%E4%BD%95%E5%85%AC%E7%90%86%E4%BD%93%E7%B3%BB%E7%9A%84%E4%B8%80%E8%87%B4%E6%80%A7%EF%BC%8C%E7%8B%AC%E7%AB%8B%E6%80%A7%EF%BC%8C%E5%AE%8C%E5%A4%87%E6%80%A7-To-Do"><span class="toc-number">19.8.</span> <span class="toc-text">希尔伯特怎么证明其几何公理体系的一致性，独立性，完备性 To Do</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%93%A5%E5%BE%B7%E5%B0%94%E4%B8%8D%E5%AE%8C%E5%A4%87%E6%80%A7%E5%AE%9A%E7%90%86-To-Do"><span class="toc-number">20.</span> <span class="toc-text">哥德尔不完备性定理 To Do</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9D%9E%E6%AC%A7%E5%87%A0%E4%BD%95-%E7%90%83%E9%9D%A2%E5%87%A0%E4%BD%95%EF%BC%8C%E5%8F%8C%E6%9B%B2%E5%87%A0%E4%BD%95"><span class="toc-number">21.</span> <span class="toc-text">非欧几何-球面几何，双曲几何</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/12/13/%E5%BE%AE%E7%A7%AF%E5%88%86/" title="微积分"><img src="/img/math.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="微积分"/></a><div class="content"><a class="title" href="/2021/12/13/%E5%BE%AE%E7%A7%AF%E5%88%86/" title="微积分">微积分</a><time datetime="2021-12-13T12:37:28.000Z" title="发表于 2021-12-13 20:37:28">2021-12-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/" title="欧式平面几何"><img src="/img/math.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="欧式平面几何"/></a><div class="content"><a class="title" href="/2021/12/08/%E6%AC%A7%E5%BC%8F%E5%B9%B3%E9%9D%A2%E5%87%A0%E4%BD%95/" title="欧式平面几何">欧式平面几何</a><time datetime="2021-12-08T02:06:46.000Z" title="发表于 2021-12-08 10:06:46">2021-12-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/12/06/%E6%95%B0%E5%AD%A6%E5%8D%B1%E6%9C%BA/" title="数学危机"><img src="/img/math.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数学危机"/></a><div class="content"><a class="title" href="/2021/12/06/%E6%95%B0%E5%AD%A6%E5%8D%B1%E6%9C%BA/" title="数学危机">数学危机</a><time datetime="2021-12-06T07:49:00.000Z" title="发表于 2021-12-06 15:49:00">2021-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/11/25/%E5%8B%BE%E8%82%A1%E5%AE%9A%E7%90%86/" title="勾股定理"><img src="/img/math.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="勾股定理"/></a><div class="content"><a class="title" href="/2021/11/25/%E5%8B%BE%E8%82%A1%E5%AE%9A%E7%90%86/" title="勾股定理">勾股定理</a><time datetime="2021-11-25T13:03:25.000Z" title="发表于 2021-11-25 21:03:25">2021-11-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/11/25/%E5%9C%86/" title="圆"><img src="/img/top.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="圆"/></a><div class="content"><a class="title" href="/2021/11/25/%E5%9C%86/" title="圆">圆</a><time datetime="2021-11-25T02:45:11.000Z" title="发表于 2021-11-25 10:45:11">2021-11-25</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/math.png')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By XuSheng</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Livere' === 'Livere' || !false) {
+  if (false) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
